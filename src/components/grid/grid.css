@@ -6,7 +6,7 @@
   grid-template-columns: repeat(2, 50%);
   background: var(--deep-red);
   justify-items: start;
-  align-items: start;
+  align-items: center;
   padding: 1.5rem;
 }
 
@@ -36,7 +36,7 @@
   font-weight: bold;
   cursor: pointer;
   width: 50%;
-  height: fit-content;;
+  height: fit-content;
   margin: 1rem;
   grid-column: span 2;
   justify-self: center;
@@ -69,4 +69,54 @@
 
 .Input {
   justify-self: center;
+}
+
+.PropertyName {
+  position: relative;
+}
+
+.PropertyName:hover > .Tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Tooltip text */
+.Tooltip {
+  visibility: hidden;
+  width: max-content;
+  background-color: var(--red-brown);
+  color: var(--pale-yellow);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -2.5rem;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: block;
+  box-sizing: border-box;
+  border: 0.2rem solid var(--teal-green);
+}
+
+/* Tooltip arrow */
+.Tooltip::after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 5%;
+  margin-left: -0.5rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color:var(--teal-green) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.Tooltip:hover {
+  visibility: visible;
+  opacity: 0.8;
 }

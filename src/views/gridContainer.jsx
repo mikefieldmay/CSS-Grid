@@ -3,19 +3,21 @@ import React, { Component } from 'react';
 import { GridControls } from '../components/grid/gridControls'
 import { Grid } from '../components/grid/grid'
 
+const defaultStyles = {
+  gridAutoFlow: 'rows',
+  gridColumnGap: '0',
+  gridRowGap: '0',
+  gridTemplateColumns: 'auto',
+  gridTemplateRows: 'auto',
+  alignItems: 'stretch',
+  justifyItems: 'stretch'
+}
+
 export class GridContainer extends Component {
 
-  state = { 
+  state = {
     items: [],
-    gridStyles: {
-      gridAutoFlow: 'rows',
-      gridColumnGap: '0',
-      gridRowGap: '0',
-      gridTemplateColumns: 'auto',
-      gridTemplateRows: 'auto',
-      alignItems: 'stretch',
-      justifyItems: 'stretch'
-    }
+    gridStyles: defaultStyles
   }
 
   onAddItem = () => {
@@ -54,7 +56,7 @@ export class GridContainer extends Component {
           addItem={this.onAddItem}
           resetGrid={this.onResetGrid}
           styleUpdate={this.onChangeStyles}
-          styles={this.gridStyles}/>
+          styles={defaultStyles}/>
         <Grid
           items={this.state.items}
           styles={this.state.gridStyles} />
