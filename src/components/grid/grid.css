@@ -1,0 +1,62 @@
+@import '../../App.css';
+
+.Controls {
+  grid-area: controls;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  background: var(--deep-red);
+  justify-items: center;
+}
+
+.Grid {
+  grid-area: main;
+  display: grid;
+  background: var(--pale-yellow);
+  overflow: hidden;
+
+}
+
+.Add {
+  background: var(--teal-green);
+  border: 1.5px solid var(--burnt-orange);
+  color: var(--burnt-orange);
+}
+
+.Reset {
+  background: var(--burnt-orange);
+  border: 1.5px solid var(--teal-green);
+  color: var(--teal-green);
+}
+
+.Button {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+  height: fit-content;;
+  margin: 1rem;
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.Add:hover {
+  background: var(--burnt-orange);
+  border: 1.5px solid var(--teal-green);
+  color: var(--teal-green);
+}
+
+.Add:hover {
+  background: var(--teal-green);
+  border: 1.5px solid var(--burnt-orange);
+  color: var(--burnt-orange);
+}
+
+.GridItem {
+  background-color: var(--red-brown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid var(--burnt-orange);
+}
