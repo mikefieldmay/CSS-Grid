@@ -6,10 +6,12 @@ Admittedly, it is not a particularly good use of css grid nor a particularly goo
 You can view a live version of the app here: TODO Add Link
 
 ### How to use
-`git clone https://github.com/mikefieldmay/CSS-Grid.git`
-`cd CSS-Grid`
-`npm install`
-`npm start`
+```
+  git clone https://github.com/mikefieldmay/CSS-Grid.git  
+  cd CSS-Grid 
+  npm install 
+  npm start 
+```
 
 ### Acknowledgements
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
