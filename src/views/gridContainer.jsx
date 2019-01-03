@@ -4,13 +4,18 @@ import { GridControls } from '../components/grid/gridControls'
 import { Grid } from '../components/grid/grid'
 
 export class GridContainer extends Component {
-  gridStyles = {
-    gridAutoFlow: 'rows'
-  }
 
   state = { 
     items: [],
-    gridStyles: this.gridStyles
+    gridStyles: {
+      gridAutoFlow: 'rows',
+      gridColumnGap: '0',
+      gridRowGap: '0',
+      gridTemplateColumns: 'auto',
+      gridTemplateRows: 'auto',
+      alignItems: 'stretch',
+      justifyItems: 'stretch'
+    }
   }
 
   onAddItem = () => {
@@ -48,7 +53,8 @@ export class GridContainer extends Component {
         <GridControls
           addItem={this.onAddItem}
           resetGrid={this.onResetGrid}
-          styleUpdate={this.onChangeStyles}/>
+          styleUpdate={this.onChangeStyles}
+          styles={this.gridStyles}/>
         <Grid
           items={this.state.items}
           styles={this.state.gridStyles} />

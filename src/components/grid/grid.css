@@ -5,7 +5,9 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
   background: var(--deep-red);
-  justify-items: center;
+  justify-items: start;
+  align-items: start;
+  padding: 1.5rem;
 }
 
 .Grid {
@@ -13,7 +15,6 @@
   display: grid;
   background: var(--pale-yellow);
   overflow: hidden;
-
 }
 
 .Add {
@@ -59,4 +60,13 @@
   justify-content: center;
   align-items: center;
   border: 0.1rem solid var(--burnt-orange);
+}
+
+.Number {
+  max-height: 1.5rem;
+  max-width: 4rem;
+}
+
+.Input {
+  justify-self: center;
 }
