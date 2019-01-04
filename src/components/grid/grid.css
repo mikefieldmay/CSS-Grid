@@ -7,7 +7,7 @@
   background: var(--deep-red);
   justify-items: start;
   align-items: center;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .Grid {
@@ -35,10 +35,7 @@
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  width: 50%;
   height: fit-content;
-  margin: 1rem;
-  grid-column: span 2;
   justify-self: center;
 }
 
@@ -60,6 +57,10 @@
   justify-content: center;
   align-items: center;
   border: 0.1rem solid var(--burnt-orange);
+}
+
+.GridItem h1 {
+  color: var(--grid-item-text);
 }
 
 .Number {

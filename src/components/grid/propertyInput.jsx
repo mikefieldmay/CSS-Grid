@@ -19,7 +19,7 @@ export const PropertyInput = ({
         </h3>
         {type === 'select' ?
           <select className='Input' onChange={(e) => updateValue(e, cssProperty)}>
-            { options.map(option => <option value={`${option}`}>{option}</option>)}
+            { options.map(option => <option key={`${propertyName}+${option}`} value={`${option}`}>{option}</option>)}
           </select> : 
           <input
             placeholder={placeholder}

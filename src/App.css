@@ -4,6 +4,11 @@
   --pale-yellow: #FFFFC7;
   --teal-green: #548687;
   --red-brown: #473335;
+  --grid-item-color-one: #055864;
+  --grid-item-color-two: #BFAB25;
+  --grid-item-color-three: #B81365;
+  --grid-item-color-four: #026C7C;
+  --grid-item-text: #6A0136;
 }
 
 .App {

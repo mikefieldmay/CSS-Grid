@@ -1,8 +1,18 @@
 .Main {
   height: 100%;
   display: grid;
-  grid-template-rows: 3.5rem auto;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "header header"
-                        "controls main";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header"
+                        "controls"
+                        "main";
+}
+
+@media (min-width: 40rem) {
+  .Main {
+    grid-template-rows: 3.5rem auto;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "header header"
+                          "controls main";
+  }
 }

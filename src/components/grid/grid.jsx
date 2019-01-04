@@ -3,14 +3,16 @@ import React from 'react';
 import { GridItem } from './gridItem';
 import './grid.css'
 
-export const Grid = ({items, styles}) => {
+export const Grid = ({items, itemType, styles}) => {
 
   let gridItems =[]
 
   items.map((item) => {
     gridItems.push(
       <GridItem
-        key={`${item.itemNum}`} />
+        itemType={itemType}
+        key={`${item.itemNum}`}
+        backgroundColor={item.backgroundColor}/>
     )
   })
 
