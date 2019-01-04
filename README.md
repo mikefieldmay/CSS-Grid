@@ -13,8 +13,13 @@ You can view a live version of the app here: TODO Add Link
   npm start 
 ```
 
-### More information about CSS Grid
+### Still to do
+- Add controls for grid items
+- Demonstrate naming or rows and stuff
+- Solve overflow problem
+- Deploy
 
+### More information about CSS Grid
 For more info on the css grid:
 - [CSS tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)

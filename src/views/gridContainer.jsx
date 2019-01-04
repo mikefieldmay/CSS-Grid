@@ -7,7 +7,6 @@ const colors = [
   "--grid-item-color-one",
   "--grid-item-color-two",
   "--grid-item-color-three",
-  "--burnt-orange",
   "--pale-yellow"
 ]
 
