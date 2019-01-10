@@ -5,10 +5,12 @@ import { Header } from '../components/header';
 
 import './main.css';
 
-export const MainView = () => {
+export const MainView = ({
+  updateView
+}) => {
   return ( 
     <div className='Main'>
-      <Header />
+      <Header updateView={updateView}/>
       <GridContainer />
     </div>
   );

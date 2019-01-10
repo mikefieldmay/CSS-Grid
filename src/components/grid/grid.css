@@ -121,3 +121,45 @@
   visibility: visible;
   opacity: 0.8;
 }
+
+.Smart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.GridAreaExample {
+  height: 100%;
+  display: grid;
+  /* grid-template-rows: 3.5rem auto auto; */
+  /* grid-template-columns: 30% 70%; */
+  grid-template-areas: 'header header'
+                        'control grid'
+                        'footer footer'
+}
+
+.GridAreaExample h1 {
+  padding: 1.5rem;
+}
+
+.GridAreaExample .Header {
+  display: flex;
+  grid-area: auto;
+  text-align: center;
+}
+
+.GridAreaExample .Grid {
+  grid-area: auto;
+  text-align: center;
+}
+
+.GridAreaExample .Controls {
+  grid-area: auto;
+  text-align: center;
+  margin: 0;
+}
+
+.Footer {
+  text-align: center;
+}

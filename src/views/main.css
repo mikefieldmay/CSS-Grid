@@ -12,7 +12,7 @@
   .Main {
     grid-template-rows: 3.5rem auto;
     grid-template-columns: 30% 70%;
-    grid-template-areas: "header header"
+    grid-template-areas: "header header" 
                           "controls main";
   }
 }

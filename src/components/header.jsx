@@ -2,9 +2,11 @@ import React from 'react';
 
 import './header.css'
 
-export const Header = () => {
+export const Header = ({
+  updateView
+}) => {
   return ( 
-    <div className='Header'>
+    <div onClick={() => updateView('A')} className='Header'>
       <h1>CSS GRID</h1>
     </div>
   );
